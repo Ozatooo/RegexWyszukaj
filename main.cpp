@@ -14,7 +14,7 @@ string wyszukaj;
 cout<<"wpisz co chcesz wyszukac : ";
 cin>>wyszukaj;
 string input;
- regex regularne(wyszukaj); //tworzymy zmienn¹ z wyra¿eniem
+ regex regularne(wyszukaj); //tworzymy zmiennÅ¡ z wyraÅ¼eniem
     ofstream plik1;
    ifstream plik;  //deklaracja zmiennej pliku tekstowego
    
@@ -27,11 +27,11 @@ string input;
               plik>>input;
               cout<<endl;
              if(!cin) break;
-                if(input=="koniec") //koniec pêtli
+                if(input=="koniec") //koniec pÄ™tli
                         break;
-                if(regex_match(input,regularne)) //sprawdzamy, czy wprowadzony napis pasuje do wyra¿enia
+                if(regex_match(input,regularne)) //sprawdzamy, czy wprowadzony napis pasuje do wyraÅ¼enia
                 {
-                	cout<<input;
+                	cout<<<<"["<<"{"<<input<<"}"<<"]"<< "\n";;
                         
                         
                     }
